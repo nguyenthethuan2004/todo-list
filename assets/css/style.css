@@ -31,6 +31,10 @@ body.theme-dark .nav-link {
 body.theme-dark .nav-link:hover {
     color: #ffc107;
 }
+a,
+a:hover {
+    text-decoration: none;
+}
 textarea {
     resize: vertical;
 }
