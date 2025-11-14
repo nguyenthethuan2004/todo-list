@@ -91,6 +91,28 @@ body.theme-dark .subtask-item {
 body.theme-dark .comment-item {
     background-color: rgba(13,110,253,0.15);
 }
+.attachment-upload {
+    align-items: stretch;
+    gap: 0.5rem;
+}
+.attachment-upload .form-control,
+.attachment-upload input[type="file"] {
+    height: 34px;
+    padding: 0.25rem 0.5rem;
+}
+.attachment-upload .btn {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    white-space: nowrap;
+}
+@media (min-width: 576px) {
+    .attachment-upload {
+        align-items: center;
+    }
+}
 .text-muted {
     color: rgba(33, 37, 41, 0.75);
 }
@@ -117,5 +139,73 @@ body.theme-dark .text-muted {
     }
     .chart-card canvas {
         max-height: 360px;
+    }
+}
+.edit-grid {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.left-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.edit-main {
+    grid-column: 1 / 2;
+}
+.side-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.side-card {
+    background-color: #fff;
+}
+.share-card {
+    background-color: #fff;
+}
+.description-field {
+    min-height: 70px;
+    height: 70px;
+}
+.share-form .share-username {
+    flex: 1 1 180px;
+    min-width: 160px;
+    max-width: 210px;
+}
+.share-form .share-role {
+    flex: 0 0 140px;
+}
+.share-form .share-submit {
+    flex: 0 0 auto;
+    padding-inline: 1.25rem;
+    margin-left: auto;
+}
+.comment-field {
+    min-height: 95px;
+    height: 95px;
+}
+@media (max-width: 575px) {
+    .share-form .share-username,
+    .share-form .share-role,
+    .share-form .share-submit {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .edit-grid {
+        display: block;
+    }
+    .left-stack,
+    .side-stack {
+        margin-top: 1.5rem;
+    }
+    .left-stack {
+        margin-top: 0;
     }
 }
