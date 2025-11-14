@@ -1,4 +1,4 @@
-# Todo List Pro (PHP + MySQL)
+# Todo List (PHP + MySQL)
 
 Ứng dụng quản lý công việc full-stack viết bằng PHP thuần, MySQL và Bootstrap. Dự án tập trung vào việc quản lý task cá nhân/nhóm với nhiều tiện ích nâng cao: phân trang, lọc, Kanban, analytics, checklist, nhắc việc, file đính kèm, chia sẻ quyền, chế độ tối và thông báo email.
 
@@ -97,5 +97,7 @@ database.sql      script tạo toàn bộ schema
 
 Dự án phục vụ mục đích học tập/demo. Bạn có thể tự do tùy chỉnh, triển khai nội bộ hoặc mở rộng theo nhu cầu.
 
-by Thế Thuận
+## 👤 Chủ sở hữu
+
+Dự án này thuộc quyền sở hữu của **Thế Thuận (nguyenthethuan2004)**. Khi sử dụng hoặc tái phân phối, vui lòng giữ nguyên thông tin tác giả.
 
