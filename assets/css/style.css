@@ -1,0 +1,117 @@
+body.theme-light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+body.theme-dark {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+body.theme-dark .card,
+body.theme-dark .table {
+    background-color: #1f1f1f;
+    color: #f8f9fa;
+}
+body.theme-light .card,
+body.theme-light .table {
+    color: #212529;
+}
+.table {
+    color: #212529;
+}
+body.theme-dark .card-header,
+body.theme-dark .navbar,
+body.theme-dark .btn-outline-light {
+    background-color: #1f1f1f;
+    color: #f8f9fa;
+}
+body.theme-dark a,
+body.theme-dark .nav-link {
+    color: #f8f9fa;
+}
+body.theme-dark .nav-link:hover {
+    color: #ffc107;
+}
+textarea {
+    resize: vertical;
+}
+.badge.priority {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+}
+.tag-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background-color: #e9ecef;
+    font-size: 0.8rem;
+    margin: 0 0.25rem 0.25rem 0;
+}
+body.theme-dark .tag-chip {
+    background-color: rgba(255,255,255,0.15);
+}
+.kanban-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+.kanban-column {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+}
+body.theme-dark .kanban-column {
+    background-color: #1f1f1f;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.subtask-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+body.theme-dark .subtask-item {
+    border-color: rgba(255,255,255,0.1);
+}
+.progress-info {
+    font-size: 0.85rem;
+}
+.comment-item {
+    border-left: 3px solid #0d6efd;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+    background-color: rgba(13,110,253,0.05);
+}
+body.theme-dark .comment-item {
+    background-color: rgba(13,110,253,0.15);
+}
+.text-muted {
+    color: rgba(33, 37, 41, 0.75);
+}
+body.theme-dark .text-muted {
+    color: rgba(255,255,255,0.7) !important;
+}
+.chart-card {
+    min-height: 320px;
+}
+.chart-card .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.chart-card canvas {
+    flex: 1;
+    min-height: 240px;
+    max-height: 320px;
+    width: 100% !important;
+}
+@media (min-width: 992px) {
+    .chart-card {
+        min-height: 360px;
+    }
+    .chart-card canvas {
+        max-height: 360px;
+    }
+}
